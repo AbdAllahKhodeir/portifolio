@@ -22,7 +22,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    threejs, intermountain, netflix, motorola, fidelity, java, cpp, jenkins, maven, kubernetes,
 } from "../assets";
 
 export const navLinks = [
@@ -42,35 +42,31 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
+        title: "Backend Engineer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Full Stack Engineer",
+        icon: web,
+    },
+    {
+        title: "Platform Engineer",
         icon: creator,
+    },
+    {
+        title: "Cloud & Infrastructure Engineer",
+        icon: docker,
     },
 ];
 
 const technologies = [
     {
-        name: "HTML 5",
-        icon: html,
+        name: "Java",
+        icon: java,
     },
     {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
+        name: "C++",
+        icon: cpp,
     },
     {
         name: "TypeScript",
@@ -97,74 +93,79 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "Jenkins",
+        icon: jenkins,
     },
     {
         name: "docker",
         icon: docker,
     },
+    {
+        name: "Maven",
+        icon: maven,
+    },
+    {
+        name: "Kubernetes",
+        icon: kubernetes,
+    },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Senior Software Engineer",
+        company_name: "Fidelity Investments",
+        icon: fidelity,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Aug 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Led the design, development, and optimization of high-performance backend REST APIs for personal investing platforms.",
+            "Architected and implemented low-latency trading APIs, improving transaction speed and platform reliability.",
+            "Reduced API latency by 30% and increased throughput by 25% through performance tuning and system optimizations.",
+            "Migrated trading and research APIs to AWS with Kubernetes, enhancing scalability and system resilience.",
+            "Designed scalable architecture patterns, enabling the platform to handle a 110% surge in transaction volume with zero performance degradation.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        title: "Software Engineer",
+        company_name: "Motorola Solutions",
+        icon: motorola,
+        iconBg: "#FFFFFF",
+        date: "Jun 2021 - Jun 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed critical software components and RESTful API web services for Motorola’s technology ecosystem.",
+            "Built an internal web-based compliance tool using Node.js, MySQL, and Express, improving compliance validation efficiency.",
+            "Scaled the compliance tool with Docker and Kubernetes, achieving 99% system availability.",
+            "Enhanced release processes and production stability by implementing an Azure CI/CD pipeline.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        title: "Software Developer",
+        company_name: "Intermountain Health",
+        icon: intermountain,
+        iconBg: "#FFFFFF",
+        date: "May 2020 - May 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Engineered an automation system for web form development using C, TSQL, and TFS, reducing front-end development time by 75%.",
+            "Modernized the flagship product to fit current browser standards, introducing CRUD functionality using C# and ASP.NET.",
+            "Developed web forms for the ePCR system using Gridbox, jQuery, JavaScript, HTML, and CSS.",
+            "Created an internal xWiki for documentation, reducing onboarding time by 70%.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        title: "Software Engineer Intern",
+        company_name: "Netflix",
+        icon: netflix,
+        iconBg: "#FFFFFF",
+        date: "Jan 2020 - May 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Designed application diagrams using LucidChart/Drawio and introduced automated test coverage with Mocha.",
+            "Integrated an internal transcription application with Five9 API using Node.js, automating voicemail transcriptions across the company.",
+            "Built a Microsoft Teams Bot for a voice recognition app using Node.js, GCP, Docker, and Kubernetes—reducing translation time by 99%.",
+            "Collaborated in an agile team environment, participating in sprints and 100% of daily scrums.",
         ],
     },
 ];

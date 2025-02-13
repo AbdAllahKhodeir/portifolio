@@ -30,6 +30,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import java from "./tech/java.png";
+import cpp from "./tech/cpp.png";
+import jenkins from "./tech/jenkins.png";
+import kubernetes from "./tech/Kubernetes.png";
+import maven from "./tech/maven.png";
+
+import netflix from "./company/netflix.png";
+import fidelity from "./company/fidelity.png";
+import motorola from "./company/motorola.png";
+import intermountain from "./company/intermountain.png";
+
 export {
   logo,
   backend,
@@ -59,4 +70,13 @@ export {
   carrent,
   jobit,
   tripguide,
+  java,
+  cpp,
+  jenkins,
+  kubernetes,
+  maven,
+  netflix,
+  fidelity,
+  motorola,
+  intermountain,
 };
