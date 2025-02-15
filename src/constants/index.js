@@ -173,38 +173,46 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Abdallah played a critical role in optimizing our trading APIs. His backend expertise and problem-solving mindset led to significant performance improvements across our platform.",
+        name: "Michael Johnson",
+        designation: "Engineering Manager",
+        company: "Fidelity Investments",
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Working with Abdallah was a pleasure. His work on our internal compliance tooling streamlined processes and demonstrated his strong ability to develop scalable backend solutions.",
+        name: "Laura Mitchell",
+        designation: "Technical Lead",
+        company: "Motorola Solutions",
+        image: "https://randomuser.me/api/portraits/women/45.jpg",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Abdallah's creativity and technical skills stood out during his internship. His work on our transcription system and Teams Bot showcased his ability to deliver impactful solutions under tight deadlines.",
+        name: "James Carter",
+        designation: "Senior Software Engineer",
+        company: "Netflix",
+        image: "https://randomuser.me/api/portraits/men/14.jpg",
+    },
+    {
+        testimonial:
+            "Abdallah was instrumental in automating our form development processes. His solutions led to faster delivery cycles and significantly improved efficiency for our team.",
+        name: "Emily Davis",
+        designation: "Project Manager",
+        company: "Intermountain Health",
+        image: "https://randomuser.me/api/portraits/women/22.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Car Rental",
         description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
         tags: [
             {
-                name: "react",
+                name: "java",
                 color: "blue-text-gradient",
             },
             {
@@ -212,7 +220,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "react",
                 color: "pink-text-gradient",
             },
         ],
@@ -220,12 +228,12 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "Job Finder",
         description:
             "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
         tags: [
             {
-                name: "react",
+                name: "Go",
                 color: "blue-text-gradient",
             },
             {
@@ -233,7 +241,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "react",
                 color: "pink-text-gradient",
             },
         ],
@@ -241,7 +249,7 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "Trip Planner",
         description:
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
@@ -254,7 +262,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Go",
                 color: "pink-text-gradient",
             },
         ],

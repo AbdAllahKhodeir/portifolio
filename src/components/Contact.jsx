@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -37,9 +40,10 @@ const Contact = () => {
             import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
             {
               from_name: form.name,
-              to_name: "JavaScript Mastery",
+              to_name: "AbdAllah Khodeir",
               from_email: form.email,
-              to_email: "sujata@jsmastery.pro",
+              to_email: "contact@abdallahkhodeir.com",
+              cc_email: "abdallahkhodeir@gmail.com",
               message: form.message,
             },
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,7 +51,7 @@ const Contact = () => {
         .then(
             () => {
               setLoading(false);
-              alert("Thank you. I will get back to you as soon as possible.");
+              toast.success("Message sent successfully! I'll get back to you soon.");
 
               setForm({
                 name: "",
@@ -58,8 +62,7 @@ const Contact = () => {
             (error) => {
               setLoading(false);
               console.error(error);
-
-              alert("Ahh, something went wrong. Please try again.");
+              toast.error("Something went wrong. Please try again later.");
             }
         );
   };
@@ -87,7 +90,7 @@ const Contact = () => {
                   name='name'
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="What's your good name?"
+                  placeholder="Enter your full name"
                   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
@@ -98,7 +101,7 @@ const Contact = () => {
                   name='email'
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="What's your web address?"
+                  placeholder="Enter your email address"
                   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
@@ -109,17 +112,41 @@ const Contact = () => {
                   name='message'
                   value={form.message}
                   onChange={handleChange}
-                  placeholder='What you want to say?'
+                  placeholder='Write your message here'
                   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
 
-            <button
-                type='submit'
-                className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-            >
-              {loading ? "Sending..." : "Send"}
-            </button>
+              <div className="flex items-center gap-4 mt-4">
+                  <button
+                      type='submit'
+                      className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+                  >
+                      {loading ? "Sending..." : "Submit"}
+                  </button>
+
+                  {/* LinkedIn Icon with External Link */}
+                  <a
+                      href="https://www.linkedin.com/in/abdallahmhmd123/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-secondary transition duration-300 flex items-center gap-2"
+                  >
+                      <FaLinkedin size={28} />
+                      <span className="text-[16px] font-medium">Connect on LinkedIn</span>
+                  </a>
+
+                  {/* GitHub */}
+                  <a
+                      href="https://github.com/abdallahkhodeir"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-secondary transition duration-300 flex items-center gap-2"
+                  >
+                      <FaGithub size={28} />
+                      <span className="text-[16px] font-medium">GitHub</span>
+                  </a>
+              </div>
           </form>
         </motion.div>
 
@@ -129,6 +156,16 @@ const Contact = () => {
         >
           <EarthCanvas />
         </motion.div>
+          {/* Toast Notification Container */}
+          <ToastContainer
+              position='bottom-center'
+              autoClose={2000}
+              hideProgressBar={false}
+              closeOnClick
+              pauseOnHover
+              draggable
+              theme='dark'
+          />
       </div>
   );
 };

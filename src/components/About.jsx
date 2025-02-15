@@ -43,16 +43,17 @@ const About = () => {
           <h2 className={styles.sectionHeadText}>Overview.</h2>
         </motion.div>
 
-        <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
-        </motion.p>
+          <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          >
+              I am a senior software engineer with <strong>Java, C++, and distributed systems expertise</strong>,
+              specializing in <strong>scalable backend services and high-performance APIs</strong>.
+              I have a proven track record of <strong>designing and optimizing large-scale systems </strong>
+              to handle <strong>high-throughput, low-latency workloads</strong>. My work spans <strong>trading platforms,
+              cloud infrastructure, and automation tooling</strong>, with a focus on
+              <strong> reliability, performance, and scalability</strong>.
+          </motion.p>
 
         <div className='mt-20 flex flex-wrap gap-10'>
           {services.map((service, index) => (
