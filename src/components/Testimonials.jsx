@@ -43,7 +43,7 @@ const FeedbackCard = ({
     </motion.div>
 );
 
-const Feedbacks = () => {
+const Testimonials = () => {
   return (
       <div className={`mt-12 bg-black-100 rounded-[20px]`}>
         <div
@@ -63,4 +63,4 @@ const Feedbacks = () => {
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Testimonials, "testimonials");

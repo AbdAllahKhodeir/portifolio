@@ -22,8 +22,9 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs, intermountain, netflix, motorola, fidelity, java, cpp, jenkins, maven, kubernetes,
+    threejs, intermountain, netflix, motorola, fidelity, java, cpp, jenkins, maven, kubernetes, wgu, gt,
 } from "../assets";
+import works from "../components/Projects.jsx";
 
 export const navLinks = [
     {
@@ -31,8 +32,20 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+      id: "education",
+      title: "Education",
+    },
+    {
+        id: "experience",
+        title: "Experience",
+    },
+    {
+        id: "projects",
+        title: "Projects",
+    },
+    {
+        id: "testimonials",
+        title: "Testimonials",
     },
     {
         id: "contact",
@@ -111,6 +124,32 @@ const technologies = [
     {
         name: "Kubernetes",
         icon: kubernetes,
+    },
+];
+
+const education = [
+    {
+        degree: "Master of Science in Computer Science",
+        institution: "Georgia Institute of Technology",
+        specialization: "Specialization: Machine Learning & Computing Systems",
+        icon: gt,
+        iconBg: "#FFFFFF",
+        date: "September 2023 – Present",
+        points: [
+            "Focusing on Machine Learning, Distributed Systems, and Advanced Computing Architectures.",
+            "Exploring large-scale systems design and scalable data processing.",
+        ],
+    },
+    {
+        degree: "Bachelor of Science in Computer Science",
+        institution: "Western Governors University",
+        icon: wgu,
+        iconBg: "#FFFFFF",
+        date: "Graduated March 2020",
+        points: [
+            "Built a strong foundation in software engineering, algorithms, and data structures.",
+            "Completed coursework in Object-Oriented Programming, Databases, Backend and Web Development.",
+        ],
     },
 ];
 
@@ -271,4 +310,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, education };

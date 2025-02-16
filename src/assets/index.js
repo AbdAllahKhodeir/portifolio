@@ -40,6 +40,8 @@ import netflix from "./company/netflix.png";
 import fidelity from "./company/fidelity.png";
 import motorola from "./company/motorola.png";
 import intermountain from "./company/intermountain.png";
+import wgu from "./company/WGU.png";
+import gt from "./company/GT.png";
 
 export {
   logo,
@@ -79,4 +81,6 @@ export {
   fidelity,
   motorola,
   intermountain,
+  wgu,
+  gt,
 };
